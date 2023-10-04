@@ -10,4 +10,7 @@ def pow(a, b):
     for _ in range(b):
         result *= a
 
-    return '{:e}'.format(result)
+    # Round the result to 2 decimal places
+    result = round(result, 2)
+
+    return result
