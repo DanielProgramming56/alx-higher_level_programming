@@ -1,9 +1,19 @@
-#!/usr/bin/python3
 def pow(a, b):
-   return  a ** b
+    result = 1
 
-print(pow(2, 2))
-print(pow(98, 2))
-print(pow(98, 0))
-print(pow(100, -2))
-print(pow(-4, 5))
+    # Handle the case when b is negative
+    if b < 0:
+        a = 1 / a
+        b = -b
+
+    for _ in range(b):
+        result *= a
+
+    return result
+
+# Test the function
+result = pow(2, 3)
+print(result)  # Output: 8
+
+result = pow(5, -2)
+print(result)  # Output: 0.04
