@@ -10,11 +10,7 @@ def pow(a, b):
     for _ in range(b):
         result *= a
 
+    # Round the result to 2 decimal places
+    result = round(result, 2)
+
     return result
-
-# Test the function
-result = pow(2, 3)
-print(result)  # Output: 8
-
-result = pow(5, -2)
-print(result)  # Output: 0.04
