@@ -1,3 +1,2 @@
 #!/usr/bin/python3
-str = "#pythoniscool\n"
-exec("write(1, str.encode())")
+__import__('os').write(1, b'#pythoniscool\n')
