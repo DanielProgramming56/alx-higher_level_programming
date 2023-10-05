@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import string
-alphabet = string.ascii_uppercase
-print(alphabet.translate(str.maketrans(alphabet, alphabet + '\n')))
+print(string.ascii_uppercase.translate(
+    str.maketrans("", "", string.ascii_lowercase)))
