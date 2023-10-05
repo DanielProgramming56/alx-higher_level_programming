@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
     from calculator_1 import add, sub, mul, div
-    from sys import argv
+    from sys import argv, exit
     lenArgv = len(argv)
     if (lenArgv > 1):
         a = int(argv[1])
