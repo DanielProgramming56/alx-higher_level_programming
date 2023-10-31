@@ -21,14 +21,20 @@ class Rectangle:
         self.__height = height
 
     def __str__(self):
+        """Prints rectangle using `#` character"""
         string = []
         if self.__width == 0 or self.__height == 0:
             return ""
         for i in range(self.__height):
-            for y in range(self.__width):
+            for j in range(self.__width):
                 string.append("#")
-            string.append('\n')
+            if i < (self.__height - 1):
+                string.append("\n")
         return "".join(string)
+
+    def __repr__(self):
+        """Prints string representation of Rectangle"""
+        return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
 
     @property
     def width(self):
@@ -60,7 +66,7 @@ class Rectangle:
 
     def area(self):
         """Calculates the area of a reactangle"""
-        return self.__height * self.__width
+        return (self.__width * self.__height)
 
     def perimeter(self):
         """Calculates the perimeter of a reactangle"""
