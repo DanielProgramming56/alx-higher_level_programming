@@ -1,6 +1,9 @@
 #!/usr/bin/python3
-"""An empty class Rectangle that defines a rectangle"""
+"""
+    Module contains of a single class
+"""
 
 
 class Rectangle:
+    """Defines a reactangle"""
     pass
