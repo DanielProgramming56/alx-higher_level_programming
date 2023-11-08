@@ -3,7 +3,7 @@
 import json
 
 
-def to_json_string(my_obj):
+def from_json_string(my_str):
     """Returns the Str representation of an object"""
-    json_obj = json.loads(my_obj)
-    return json_obj
+    str_json = json.loads(my_str)
+    return str_json
