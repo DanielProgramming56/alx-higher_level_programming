@@ -2,11 +2,10 @@
 const { argv } = require('process');
 
 if (isNaN(argv[2])) {
-    console.log('Missing number of occurrences');
+  console.log('Missing number of occurrences');
 } else {
-    if (parseInt(argv[2]) !== 0) {
-        for (let i = 0; i < argv[2]; i++) {
-            console.log('C is fun');
-        }
-    }
+  const number = parseInt(argv[2]);
+  for (let i = 0; ((i >= 0) && (i < number)); i++) {
+    console.log('C is fun');
+  }
 }
