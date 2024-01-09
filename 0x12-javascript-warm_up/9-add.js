@@ -10,5 +10,4 @@ function add(a, b) {
     b = parseInt(b);
     return (a + b);
 }
-
 console.log(add(argv[2], argv[3]));
