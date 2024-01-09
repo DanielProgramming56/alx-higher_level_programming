@@ -3,6 +3,6 @@
 let trackLogs = 0;
 
 exports.logMe = function (item) {
-    console.log(`${trackLogs}: ${item}`);
-    trackLogs++;
+  console.log(`${trackLogs}: ${item}`);
+  trackLogs++;
 };
